@@ -1,5 +1,4 @@
 import styles from "./Gallery.module.css";
-
 import { useState } from "react";
 import { Card } from "../Card/Card";
 import { ImageModal } from "../ImageModal/ImageModal";

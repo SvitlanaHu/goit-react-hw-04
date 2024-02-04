@@ -1,6 +1,6 @@
 import styles from "./Card.module.css";
 
-export const ItemCard = ({ item, openModal }) => {
+export const Card = ({ item, openModal }) => {
   return (
     <li className={styles.listItem} onClick={() => openModal(item)}>
       <div className={styles.imgCont}>
