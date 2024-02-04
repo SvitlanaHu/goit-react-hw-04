@@ -1,12 +1,12 @@
 import { Toaster } from "react-hot-toast";
 import { useEffect, useState } from "react";
 import { nanoid } from "nanoid";
-import { SearchBar } from "./SearchBar/SearchBar";
-import { fetchPictures } from "../unsplashApi";
-import { Gallery } from "./ImgGallery/ImgGallery";
-import { Loader } from "./Loader/Loader";
-import { LoadMore } from "./LoadMore/LoadMore";
-import { ErrorMessage } from "./ErrorMessage/ErrorMessage";
+import { SearchBar } from "../SearchBar/SearchBar";
+import { fetchPictures } from "../API/unsplashApi";
+import { Gallery } from "../Gallery/Gallery";
+import { Loader } from "../Loader/Loader";
+import { LoadMore } from "../LoadMore/LoadMore";
+import { ErrorMessage } from "../ErrorMessage/ErrorMessage";
 
 export function App() {
   const [query, setQuery] = useState("");

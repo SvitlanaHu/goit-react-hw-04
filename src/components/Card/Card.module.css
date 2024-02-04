@@ -1,0 +1,28 @@
+.imgCont {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  object-fit: cover;
+  width: 350px;
+  height: 250px;
+}
+.listItem {
+  border: 1px solid black;
+  border-radius: 4px;
+}
+.listItem:hover .img {
+  transform: scale(1.02);
+  transition: transform 0s ease-in-out;
+  border-radius: 4px;
+}
+.img {
+  size: cover;
+  border-radius: 2px;
+  width: 350px;
+  height: 250px;
+  /* border-top-left-radius: 4px;
+  border-top-right-radius: 4px; */
+  /* border-bottom: 2px solid grey; */
+}
