@@ -25,9 +25,21 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
   min-width: 320px;
   min-height: 100vh;
+
+  overflow: auto;
+  background: linear-gradient(
+    275deg,
+    rgba(85, 1, 79, 0.982) 3%,
+    rgb(60, 84, 206) 38%,
+    rgb(48, 209, 238) 68%,
+    rgb(255, 224, 25) 98%
+  );
+  overflow-x: hidden;
 }
 
 h1 {

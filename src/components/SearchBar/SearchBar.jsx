@@ -1,6 +1,6 @@
 import styles from "./SearchBar.module.css";
 import toast from "react-hot-toast";
-import { IoIosSearch } from "react-icons/io";
+import { IoSearch } from "react-icons/io5";
 
 export const SearchBar = ({ onSearch }) => {
   const handleSubmit = (e) => {
@@ -26,7 +26,7 @@ export const SearchBar = ({ onSearch }) => {
             placeholder="Search images and photos"
           />
           <button className={styles.btn} type="submit">
-            <IoIosSearch />
+            <IoSearch className={styles.icon} />
           </button>
         </div>
       </form>
