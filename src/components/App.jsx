@@ -1,14 +1,14 @@
+import { Toaster } from "react-hot-toast";
 import { useEffect, useState } from "react";
 import { nanoid } from "nanoid";
-import { Toaster } from "react-hot-toast";
 import { SearchBar } from "./SearchBar/SearchBar";
-import { fetchPictures } from "../api";
+import { fetchPictures } from "../unsplashApi";
 import { Gallery } from "./ImgGallery/ImgGallery";
 import { Loader } from "./Loader/Loader";
 import { LoadMore } from "./LoadMore/LoadMore";
 import { ErrorMessage } from "./ErrorMessage/ErrorMessage";
 
-export default function App() {
+export function App() {
   const [query, setQuery] = useState("");
   const [page, setPage] = useState(1);
   const [pictures, setPictures] = useState([]);
